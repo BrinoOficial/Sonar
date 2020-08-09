@@ -26,14 +26,14 @@ void setup() {
   pinMode(echo_Pino, INPUT);
 
   Serial.begin(9600);
-  Radar_Servo.attach(12); // Aqui eu defino em qual pino o servo está conectado
+  Sonar_Servo.attach(12); // Aqui eu defino em qual pino o servo está conectado
 }
 
 void loop() {
   
   // Aqui estamos fazendo um for para o servo girar de 15° até 165°
     for(int i = 0; i <= 180; i++){
-    Radar_Servo.write(i);
+    Sonar_Servo.write(i);
     delay(30);
     
     // Nessa parte, enquanto o servo gira, o sensor verifica
@@ -50,7 +50,7 @@ void loop() {
     // Os mesmos passos que fizemos para ele ir de 15° --> 165°
     // Vamos utilizar para ele voltar de 165° --> 15°
     for(int i = 180; i > 0 ; i--){
-    Radar_Servo.write(i);
+    Sonar_Servo.write(i);
     delay(30);
     
     // Nessa parte, enquanto o servo gira, o sensor verifica
