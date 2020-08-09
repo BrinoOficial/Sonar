@@ -1,6 +1,6 @@
 ////////////////////////////////////////////////////////////////////////////
 //            ------ AutoCore Robótica -------         
-//               Projeto: Radar com HC-SR04            
+//               Projeto: Sonar com HC-SR04            
 //               Autor: Danilo Nogueira                
 //               Data: 20/08/2018                      
 ///////////////////////////////////////////////////////////////////////////
@@ -55,9 +55,9 @@ rect(0, 0, width, height-height*0.065);
 fill(98,245,31);
 
 
-// Chama as funções Radar, line, Object, Text
+// Chama as funções Sonar, line, Object, Text
 // Aqui é onde a mágica acontece
-drawRadar();
+drawSonar();
 drawLine();
 drawObject();
 drawText();
@@ -78,7 +78,7 @@ distancia= dados.substring(index1+1, dados.length());
 iAngulo = int(angulo);
 iDistancia = int(distancia);
 }
-void drawRadar() {
+void drawSonar() {
 
   pushMatrix();
 translate(width/2,height-height*0.074); // Move as coordenadas iniciais para outro local
@@ -136,7 +136,7 @@ void drawText() {
  
 pushMatrix();
 if(iDistancia>40) {
-noObject = "Nenhum objeto no Radar";
+noObject = "Nenhum objeto no Sonar";
 }
 else {
 noObject = "Objeto Detectado!";
