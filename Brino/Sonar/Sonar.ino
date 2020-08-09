@@ -19,7 +19,7 @@
   int  distancia;
 
   // Aqui criamos um objeto chamado 'Radar_Servo' o qual vamos controlar
-  Servo Radar_Servo;
+  Servo Sonar_Servo;
 
 void setup(){
   
@@ -29,14 +29,14 @@ void setup(){
   pinMode(echo_Pino, INPUT);
 
   Serial.begin(9600);
-  Radar_Servo.attach(12); // Aqui eu defino em qual pino o servo está conectado
+  Sonar_Servo.attach(12); // Aqui eu defino em qual pino o servo está conectado
 }
 
 void loop(){
   
   // Aqui estamos fazendo um para para o servo girar de 15° até 165°
     for(int  i = 0; i <= 180; i++){
-    Radar_Servo.write(i);
+    Sonar_Servo.write(i);
     delay(30);
     
     // Nessa parte, enquanto o servo gira, o sensor verifica
