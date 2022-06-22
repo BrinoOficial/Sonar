@@ -7,16 +7,16 @@
 
 #include <Servo.h>.
 
-  // Aqui vamos definir o pino de Echo e Trigger do HC-SR04
-  const int trig_Pino = 10;
-  const int echo_Pino = 11;
+// Aqui vamos definir o pino de Echo e Trigger do HC-SR04
+const int trig_Pino = 10;
+const int echo_Pino = 11;
 
-  // Vamos criar duas variáveis para calcular a distancia do objeto
-  long tempo;
-  int distancia;
+// Vamos criar duas variáveis para calcular a distancia do objeto
+long tempo;
+int distancia;
 
-  // Aqui criamos um objeto chamado 'Radar_Servo' o qual vamos controlar
-  Servo Radar_Servo;
+// Aqui criamos um objeto chamado 'Radar_Servo' o qual vamos controlar
+Servo Sonar_Servo;
 
 void setup() {
   
