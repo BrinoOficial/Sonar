@@ -15,7 +15,7 @@ A montagem do circuito pode ser visto na imagam abaixo:
 ![Imagem do circuito](https://github.com/BrinoOficial/Sonar/blob/master/Circuito/CircuitoRadar.png)
 
 # Código
-O código está disponível na linguagem Br.ino e na Arduino dentro da pasta "Sonar". O código em Processing está na pasta "processing", o código original está disponível em http://autocorerobotica.blog.br/construindo-um-Sonar-com-sensor-ultrassonico/. Pode ser necessária a seleção da porta serial no código em Processing, siga os comentários do código ou acesse o link disponibilizado.
+O código está disponível na linguagem Br.ino e na Arduino dentro da pasta "Sonar". O código em Processing está na pasta "processing", o tutorial do projeto está disponível em https://brino.cc/tutorial/como-criar-um-projeto-de-sonar-com-arduino/. Pode ser necessária a seleção da porta serial no código em Processing, siga os comentários do código ou acesse o link disponibilizado.
 
 # Projeto finalizado
 Seguem algumas imagem do resultado do projeto e um breve vídeo de seu funcionamento.
@@ -31,5 +31,5 @@ Mais projetos como esse podem ser encontrados no nosso site: https://brino.cc
 # Encontrou algum erro?
 Caso tenha encontrado algum erro ou tenha alguma sugestão, mande email para: contato@brino.cc ou crie um issue neste projeto
 
-# Referências
-projeto feito com base em: http://autocorerobotica.blog.br/construindo-um-Sonar-com-sensor-ultrassonico/
+# Tutorial
+Mais informações sobre o projeto em: https://brino.cc/tutorial/como-criar-um-projeto-de-sonar-com-arduino/
